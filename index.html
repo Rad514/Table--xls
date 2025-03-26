@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Пивоварня Артель</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="sidebar"> <button id="productionBtn" onclick="openTab('productionOrder')">Производство</button> <button id="warehouseDeliveryBtn" onclick="openTab('warehouseDelivery')">Склад и доставка</button> 
+   </div> 
+   <div class="main-content"> 
+    <div id="productionOrder" class="tab-content"> 
+     <h2>Заказы на производство</h2> <button id="createOrderBtn" onclick="openSubTab('orderCreation')">Создать заказ</button> 
+     <div id="orderCreation" class="sub-tab-content hidden"> 
+      <h3>Заказ на производство (создание)</h3> <label for="status">Статус:</label> <select id="status"> <option value="toProduction">К производству</option> </select> <label for="date">Дата:</label> 
+      <input type="date" id="date"> <label for="department">Подразделение:</label> <select id="department"> <option value="bottlingShop">Цех розлива</option> </select> 
+      <h4>Продукция</h4> <label for="product">Номенклатура:</label> 
+      <input type="text" id="product" placeholder="Напиток пивной"> <label for="quantity">Количество:</label> 
+      <input type="number" id="quantity" placeholder="Количество бутылок"> <label for="recipient">Получатель:</label> <select id="recipient"> <option value="finishedGoodsWarehouse">Склад готовой продукции</option> </select> <label for="startDate">Начать не ранее:</label> 
+      <input type="date" id="startDate"> <label for="desiredDate">Желаемая дата выпуска:</label> 
+      <input type="date" id="desiredDate"> <button id="saveOrderBtn">Сохранить</button> 
+     </div> 
+     <div id="orderList"> 
+      <h4>Список заказов</h4> 
+      <ul id="orders"></ul> 
+     </div> 
+    </div> 
+    <div id="warehouseDelivery" class="tab-content hidden"> 
+     <h2>Склад и доставка</h2> <!-- Здесь можно добавить содержимое для вкладки "Склад и доставка" --> 
+    </div> 
+    <div>
+     <a href="https://docs.google.com/spreadsheets/d/18AJn_oRvttvV1fVprxLyMGMqO3p2XdpOXHLa5o9FljM/edit?usp=drivesdk" "< div> </a> 
+    </div><a spreadsheets d 18ajn_orvttvv1fvprxlymgmqo3p2xdpoxhla5o9fljm edit?usp="drivesdk&quot;" "<="" div=""> </a> "&gt;
+    <script src="script.js"></script> 
+   </div> 
+  </div>
+ </body>
+</html>

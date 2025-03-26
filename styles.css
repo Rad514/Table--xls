@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Светлый фон */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Занимает всю высоту экрана */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50; /* Темно-синий цвет */
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #2980b9; /* Синий цвет кнопок */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #3498db; /* Светлее при наведении */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1; /* Светло-серый фон */
+    overflow-y: auto; /* Прокрутка при необходимости */
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+h2, h3, h4 {
+    color: #34495e; /* Темно-синий цвет заголовков */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; /* Серый цвет границы */
+    border-radius: 4px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #2980b9; /* Синий цвет при фокусе */
+    outline: none; /* Убираем стандартный outline */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #27ae60; /* Зеленый цвет для кнопок */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71; /* Светлее при наведении */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #ffffff; /* Белый фон для элементов списка */
+    border: 1px solid #bdc3c7; /* Серый цвет границы */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #ecf0f1; /* Светло-серый фон при наведении */
+}
